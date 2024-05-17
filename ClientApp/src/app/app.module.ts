@@ -5,10 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
