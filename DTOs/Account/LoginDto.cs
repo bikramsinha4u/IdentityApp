@@ -4,10 +4,10 @@ namespace IdentityApp.DTOs.Account
 {
     public class LoginDto
     {
-        [Required]
+        [Required(ErrorMessage = "UserName is required")]
         public string UserName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Password is required")]
         public string Password { get; set; }
     }
 }

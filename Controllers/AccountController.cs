@@ -75,7 +75,7 @@ namespace IdentityApp.Controllers
             if(!result.Succeeded)
                 return BadRequest(result.Errors);
 
-            return Ok("Your account has been created, please login.");
+            return Ok(new JsonResult(new { title = "Account Created", message = "Your account has been created, please confrim your email address" }));
         }
 
         #region Private Helper
